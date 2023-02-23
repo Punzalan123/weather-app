@@ -3,9 +3,12 @@ body {
   font-family: "Roboto", Arial !important ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: linear-gradient(to bottom right, #5B8FB9, #B6EADA); */
-  background-color: #5B8FB9;
-  /* min-height: 100vh; */
+  background: linear-gradient(to bottom right, #301E67, #5B8FB9);
+  /* background-color: #5B8FB9; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 body::-webkit-scrollbar{
