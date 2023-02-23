@@ -1,0 +1,144 @@
+.forecast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hourly-forecast, .daily-forecast{
+    background: linear-gradient(to left, #BDCDD6, #93BFCF);
+    border-radius: 15px;
+    box-shadow: 5px -1px 10px 1px rgb( 0 0 0 / 30%);
+}
+
+.hourly-forecast{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.hour-forecast-divs{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.hour{
+    display: flex;
+    width: 80px;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+.daily-forecast{
+    height: 460px; 
+    overflow-y: auto;
+    margin: 20px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.title, .hour-title {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px ;
+
+}
+.hour-title{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+
+
+.daily-item {
+    /* border: 1px solid #535353; */
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    margin: 10px auto;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    /* width: 80%; */
+    font-size: 14px;
+    padding: 3px 20px;
+
+}
+
+.icon-small {
+    width: 40px;
+}
+
+.day {
+    color: #212121;
+    flex: 1 1;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.description-forecast {
+    text-transform: capitalize;
+    flex: 1 1;
+    /* margin-right: 15px; */
+    /* text-align: right; */
+}
+
+.min-max{
+    color: #535353;
+}
+
+.daily-details{
+    grid-row-gap: 0;
+    grid-column-gap: 15px;
+    row-gap: 0;
+    column-gap: 15px;
+    display: grid;
+    flex: 1 1;
+    grid-template-columns: auto auto;
+    padding: 5px 15px;
+}
+
+.daily-details-item{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.daily-details-item label:first-child{
+    color: #535353;
+}
+.daily-details-item label:last-child{
+    color: #212121;
+}
+
+.hourly-description-forecast{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hour-forecast-time, .hourly-description-forecast{
+    margin: 1px;
+}
+.hour-forecast-time{
+    font-size: 13px;
+    text-align: center;
+}
